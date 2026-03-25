@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astro Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 1px 2px 8px rgba(0,0,0,0.1);
+        }
+        p {
+            text-align: center;
+            color: #2a2a72;
+        }
+
+        h2 {
+            text-align: center;
+            color: #2a2a72;
+        }
+        h1 {
+            text-align: center;
+            color: #2a2a72;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #2a2a72;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1f1f55;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Welcome To AstroAnalysis</h1>
+    <p>Enter your birth data below to receive a personalized analysis</p>
+    <h2>Enter Your Birth Data</h2>
+
+    <form method="POST" action="/analysis">
+        <label for="year">Year</label>
+        <input id="year" name="year" placeholder="Year" type="number" required>
+
+        <label for="month">Month</label>
+        <input id="month" name="month" placeholder="Month" type="number" required>
+
+        <label for="day">Day</label>
+        <input id="day" name="date" placeholder="Day" type="number" required>
+
+        <label for="hours">Hours</label>
+        <input id="hours" name="hours" placeholder="Hour" type="number" required>
+
+        <label for="minutes">Minutes</label>
+        <input id="minutes" name="minutes" placeholder="Minutes" type="number" required>
+
+        <label for="seconds">Seconds</label>
+        <input id="seconds" name="seconds" placeholder="Seconds" type="number" required>
+
+        <label for="latitude">Latitude</label>
+        <input id="latitude" name="latitude" placeholder="Latitude" type="number" step="any" required>
+
+        <label for="longitude">Longitude</label>
+        <input id="longitude" name="longitude" placeholder="Longitude" type="number" step="any" required>
+
+        <label for="timezone">Timezone</label>
+        <input id="timezone" name="timezone" placeholder="Timezone" type="number" required>
+
+        <button>Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Astrology Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background: #f9f9f9; }
+        .ai-response h3 { color: #2a2a72; margin-top: 20px; }
+        .ai-response h4 { color: #444; margin-top: 15px; }
+        .ai-response p { margin-bottom: 10px; }
+        .ai-response ul { margin-left: 20px; margin-bottom: 10px; }
+        .ai-response li { margin-bottom: 5px; }
+        .ai-response strong { color: #333; }
+        .ai-response em { color: #555; font-style: italic; }
+        hr { border: 0; border-top: 1px solid #ccc; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>Astrology Analysis</h1>
+    <div class="ai-response">
+        {{ ai_response|safe }}
+    </div>
+</body>
+</html>
