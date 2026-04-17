@@ -1,10 +1,11 @@
 from google import genai
 import os
 from dotenv import load_dotenv
+load_dotenv()
 
 class AiAnswer:
     def __init__(self,data_to_analyze):
-        load_dotenv()
+        
         self.key = os.environ.get("GEMINI")
         self.data_to_analyze = data_to_analyze
         self.client = genai.Client(api_key=self.key)
