@@ -8,8 +8,6 @@ class Astro:
     def __init__(self,params):
 
         self.url = os.environ.get("URL")
-        self.api_key = os.environ.get("KEY")
-
         API_KEY = os.environ.get("KEY")
         self.header = {
             "noobcoder_learning": "application/PythonProject13",
