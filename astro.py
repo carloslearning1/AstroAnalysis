@@ -10,7 +10,7 @@ class Astro:
         self.url = os.environ.get("URL")
         API_KEY = os.environ.get("KEY")
         self.header = {
-            "noobcoder_learning": "application/PythonProject13",
+            "learning": "application/PythonProjectX",
             "x-api-key": API_KEY,
         }
         self.params = params
