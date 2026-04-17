@@ -2,9 +2,10 @@ import os
 from dotenv import load_dotenv
 import requests
 
+load_dotenv()
+
 class Astro:
     def __init__(self,params):
-        load_dotenv()
 
         self.url = os.environ.get("URL")
         self.api_key = os.environ.get("KEY")
